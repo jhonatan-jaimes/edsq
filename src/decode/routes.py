@@ -1,7 +1,5 @@
-from fastapi import APIRouter
+from src.application import routes
 from src.models import Message
-
-routes = APIRouter()
 
 
 @routes.post("/decode")

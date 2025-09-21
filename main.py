@@ -1,10 +1,8 @@
-from src.application import app, routes
-from src.decode import routes_decode
+from src.application import server_run
 
 
 def run():
-    routes.include_router(routes_decode)
-    app.include_router(routes)
+    server_run()
 
 
 if __name__ == '__main__':
