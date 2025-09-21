@@ -21,5 +21,5 @@ $ python -m venv .venv
 # Linux, Mac --> bash
 $ source .venv/bin/activate
 # Windows --> PowerShell
-$ .venv/bin/activate
+$ .venv/Scripts/activate
 ```
