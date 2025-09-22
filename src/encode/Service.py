@@ -39,10 +39,17 @@ def number_to_caracter(array_numb: list[str]):
         array_char.append(biblioteca.number_to_caracter.get(seg_par, seg_par))
     return array_char
 
+def encode_clean(array_char: list[str]):
+    encode = ""
+    for i in array_char:
+        encode += i
+    return encode
+
 class Service:
     def encode_text(self, text_to_encode: Message):
         array_caracter = list(text_to_encode.text)
         array_code = caracter_to_code(array_caracter)
         array_numb = code_to_number(array_code)
         array_char = number_to_caracter(array_numb)
-        return array_char
+        encode = encode_clean(array_char)
+        return encode
