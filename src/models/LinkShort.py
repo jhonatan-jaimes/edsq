@@ -3,5 +3,6 @@ from typing import ClassVar
 from pydantic import BaseModel
 
 
-class Message(BaseModel):
-    text: str
+class LinkShort(BaseModel):
+    link: str
+    cli: str

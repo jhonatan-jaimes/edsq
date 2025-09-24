@@ -1,3 +1,3 @@
-from .Biblioteca import BibliotecasEncode, BibliotecaDecode
+from .Biblioteca import BibliotecasEncode, BibliotecaDecode, BibliotecaLink
 
-__all__ = ["BibliotecasEncode", "BibliotecaDecode"]
+__all__ = ["BibliotecasEncode", "BibliotecaDecode", "BibliotecaLink"]
