@@ -5,9 +5,11 @@ from src.models import Message
 
 biblioteca = BibliotecasEncode()
 
+
 def code_random():
     num_random = random.randint(1, 166)
     return num_random + 110
+
 
 def caracter_to_code(array_caracter: list[str]):
     array_code: list[str] = []
@@ -18,6 +20,7 @@ def caracter_to_code(array_caracter: list[str]):
             raise RuntimeError(f"Caracter no encontrado: {i}")
     return array_code
 
+
 def code_to_number(array_code: list[str]):
     array_numb: list[str] = []
     for i in array_code:
@@ -26,6 +29,7 @@ def code_to_number(array_code: list[str]):
             num = biblioteca.code_to_number[j]
             array_numb.append(num)
     return array_numb
+
 
 def number_to_caracter(array_numb: list[str]):
     codigo = code_random()
@@ -39,11 +43,13 @@ def number_to_caracter(array_numb: list[str]):
         array_char.append(biblioteca.number_to_caracter.get(seg_par, seg_par))
     return array_char
 
+
 def encode_clean(array_char: list[str]):
     encode = ""
     for i in array_char:
         encode += i
     return encode
+
 
 class Service:
     def encode_text(self, text_to_encode: Message):
