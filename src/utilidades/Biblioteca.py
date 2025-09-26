@@ -93,7 +93,3 @@ class BibliotecaLink:
             "53": "P", "54": "Q", "55": "R", "56": "S", "57": "T", "58": "U", "59": "V", "60": "W",
             "61": "X", "62": "Y", "63": "Z",
         }
-
-        self.biblioteca_general = {
-            "o": 13
-        }
